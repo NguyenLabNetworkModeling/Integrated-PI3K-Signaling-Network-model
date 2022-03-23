@@ -8,15 +8,8 @@ close all;
 
 % specify the directory where this file is located
 
-workplace = 1; % 1:office, 2: home
 
-if workplace == 1
-    % Office drive
-    rootwd = 'C:\Users\sshin\OneDrive - Monash University\RESEARCH\___PI3K (p21) proj\_CodeMaster\Matlab\PI3K_Network_Model';
-elseif workplace == 2
-    % home drrive
-    rootwd = 'D:\Users\ssy17\OneDrive - Monash University\RESEARCH\___PI3K (p21) proj\_CodeMaster\Matlab\PI3K_Network_Model';
-end
+rootwd = 'YOUR WORKING DIRECTORY';
 
 
 % Working Folds (shared)
