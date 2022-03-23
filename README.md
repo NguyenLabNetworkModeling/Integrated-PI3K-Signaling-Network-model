@@ -13,6 +13,7 @@ rootwd = 'YOUR ROOT DIRECTORY';
 - Simulation: a. Functional analysis of p21, b. Ensemble simulation, c. Model validation
 - Model calibration: a. Run Genetic Algorithm, b. Plot fitting result, c. Plot validation result
 
+* Unzip BoundedLine.zip and boxplottool.zip to the Packages fold where they are located.
 
 # Contact
 If you have any question, contact sungyoung.shin (at) monash.edu
