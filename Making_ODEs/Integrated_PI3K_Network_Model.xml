@@ -1,0 +1,4206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="rootCompartment" name="rootCompartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="IGF" name="IGF" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IR" name="IR" compartment="rootCompartment" initialAmount="150" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IRL" name="IRL" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IRp" name="IRp" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IRi" name="IRi" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PI3Ka" name="PI3Ka" compartment="rootCompartment" initialAmount="200" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PI3Kb" name="PI3Kb" compartment="rootCompartment" initialAmount="200" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IRp_PI3Ka" name="IRp_PI3Ka" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="IRp_PI3Kb" name="IRp_PI3Kb" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pHER3L_PI3Ka" name="pHER3L_PI3Ka" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pHER3L_PI3Kb" name="pHER3L_PI3Kb" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PIP3" name="PIP3" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PIP2" name="PIP2" compartment="rootCompartment" initialAmount="3000" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PDK1" name="PDK1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="mPDK1" name="mPDK1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="GAB" name="GAB" compartment="rootCompartment" initialAmount="225" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="mGABp" name="mGABp" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="PREX1" name="PREX1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="mPREX1" name="mPREX1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="dRac1" name="dRac1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="tRac1" name="tRac1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Akt" name="Akt" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pAkt" name="pAkt" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="SGK1" name="SGK1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pSGK1" name="pSGK1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="SGK3" name="SGK3" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pSGK3" name="pSGK3" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="GSK3" name="GSK3" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pGSK3" name="pGSK3" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="mTORC1" name="mTORC1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="amTORC1" name="amTORC1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="FOXO3" name="FOXO3" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pFOXO3" name="pFOXO3" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="NDRG1" name="NDRG1" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pNDRG1" name="pNDRG1" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="S6K" name="S6K" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pS6K" name="pS6K" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="S6" name="S6" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pS6" name="pS6" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="dRas" name="dRas" compartment="rootCompartment" initialAmount="150" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="tRas" name="tRas" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Raf" name="Raf" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="aaRaf" name="aaRaf" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Mek" name="Mek" compartment="rootCompartment" initialAmount="200" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pMek" name="pMek" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Erk" name="Erk" compartment="rootCompartment" initialAmount="400" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pErk" name="pErk" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="HER3" name="HER3" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="HRG" name="HRG" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="HER3L" name="HER3L" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pHER3L" name="pHER3L" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="iHER3L" name="iHER3L" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="ER" name="ER" compartment="rootCompartment" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pER" name="pER" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="RB" name="RB" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="pRB" name="pRB" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="ppRB" name="ppRB" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="E2F" name="E2F" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="E2FRB" name="E2FRB" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Cd" name="Cd" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CDK4" name="CDK4" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K4D" name="K4D" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K4Da" name="K4Da" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Ce" name="Ce" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CDK2" name="CDK2" compartment="rootCompartment" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K2E" name="K2E" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K2Ea" name="K2Ea" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="p21" name="p21" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K4Da_p21" name="K4Da_p21" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="K2Ea_p21" name="K2Ea_p21" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="cMyc" name="cMyc" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="p_p21" name="p_p21" compartment="rootCompartment" initialAmount="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="ka_rt_001" name="ka_rt_001" value="0.0831764" constant="true"/>
+      <parameter id="kd_rt_001" name="kd_rt_001" value="0.0141254" constant="true"/>
+      <parameter id="kc1_rt_002" name="kc1_rt_002" value="0.108393" constant="true"/>
+      <parameter id="vm_rt_002" name="vm_rt_002" value="26.9153" constant="true"/>
+      <parameter id="kc1_rt_003" name="kc1_rt_003" value="23.4423" constant="true"/>
+      <parameter id="vm_rt_003" name="vm_rt_003" value="2.69153" constant="true"/>
+      <parameter id="kc2_rt_004" name="kc2_rt_004" value="0.229087" constant="true"/>
+      <parameter id="vm_rt_004" name="vm_rt_004" value="2.75423" constant="true"/>
+      <parameter id="Ki_rt_004" name="Ki_rt_004" value="0.00331131" constant="true"/>
+      <parameter id="kc2_rt_005" name="kc2_rt_005" value="0.00645654" constant="true"/>
+      <parameter id="vm_rt_005" name="vm_rt_005" value="0.724436" constant="true"/>
+      <parameter id="kc2_rt_006" name="kc2_rt_006" value="316.228" constant="true"/>
+      <parameter id="vm_rt_006" name="vm_rt_006" value="0.0128825" constant="true"/>
+      <parameter id="kc2_rt_007" name="kc2_rt_007" value="28.1838" constant="true"/>
+      <parameter id="vm_rt_007" name="vm_rt_007" value="0.0295121" constant="true"/>
+      <parameter id="alpha_rt_008a" name="alpha_rt_008a" value="0.0162181" constant="true"/>
+      <parameter id="alpha_rt_008b" name="alpha_rt_008b" value="316.228" constant="true"/>
+      <parameter id="alpha_rt_008c" name="alpha_rt_008c" value="0.11749" constant="true"/>
+      <parameter id="kc2_rt_010" name="kc2_rt_010" value="7.94328" constant="true"/>
+      <parameter id="Ki_rt_010" name="Ki_rt_010" value="128.825" constant="true"/>
+      <parameter id="vm_rt_010" name="vm_rt_010" value="50.1187" constant="true"/>
+      <parameter id="kc2_rt_008" name="kc2_rt_008" value="0.0707946" constant="true"/>
+      <parameter id="kc2_rt_009" name="kc2_rt_009" value="288.403" constant="true"/>
+      <parameter id="Km_rt_008" name="Km_rt_008" value="2.81838" constant="true"/>
+      <parameter id="vm_rt_011" name="vm_rt_011" value="0.954993" constant="true"/>
+      <parameter id="kc2_rt_011" name="kc2_rt_011" value="28.8403" constant="true"/>
+      <parameter id="kc2_rt_012" name="kc2_rt_012" value="0.218776" constant="true"/>
+      <parameter id="vm_rt_012" name="vm_rt_012" value="0.616595" constant="true"/>
+      <parameter id="kc2_rt_013" name="kc2_rt_013" value="1" constant="true"/>
+      <parameter id="vm_rt_013" name="vm_rt_013" value="64.5654" constant="true"/>
+      <parameter id="kc2_rt_014" name="kc2_rt_014" value="0.436516" constant="true"/>
+      <parameter id="vm_rt_014" name="vm_rt_014" value="0.112202" constant="true"/>
+      <parameter id="ki_rt_014" name="ki_rt_014" value="281.838" constant="true"/>
+      <parameter id="kc2_rt_015" name="kc2_rt_015" value="2.29087" constant="true"/>
+      <parameter id="vm_rt_015" name="vm_rt_015" value="100" constant="true"/>
+      <parameter id="kc2_rt_016" name="kc2_rt_016" value="1.31826" constant="true"/>
+      <parameter id="vm_rt_016" name="vm_rt_016" value="0.128825" constant="true"/>
+      <parameter id="kc2_rt_016a" name="kc2_rt_016a" value="316.228" constant="true"/>
+      <parameter id="vm_rt_016a" name="vm_rt_016a" value="2.04174" constant="true"/>
+      <parameter id="kc2_rt_017a" name="kc2_rt_017a" value="0.111429" constant="true"/>
+      <parameter id="kc2_rt_017b" name="kc2_rt_017b" value="13.1826" constant="true"/>
+      <parameter id="alpha_rt_017" name="alpha_rt_017" value="0.00988553" constant="true"/>
+      <parameter id="vm_rt_017" name="vm_rt_017" value="147.911" constant="true"/>
+      <parameter id="kc2_rt_018a" name="kc2_rt_018a" value="316.228" constant="true"/>
+      <parameter id="kc2_rt_018b" name="kc2_rt_018b" value="316.228" constant="true"/>
+      <parameter id="vm_rt_018" name="vm_rt_018" value="0.00213796" constant="true"/>
+      <parameter id="kc2_rt_019" name="kc2_rt_019" value="102.329" constant="true"/>
+      <parameter id="vm_rt_019" name="vm_rt_019" value="263.027" constant="true"/>
+      <parameter id="kc2_rt_020a" name="kc2_rt_020a" value="1.02329" constant="true"/>
+      <parameter id="kc2_rt_020b" name="kc2_rt_020b" value="154.882" constant="true"/>
+      <parameter id="vm_rt_020" name="vm_rt_020" value="316.228" constant="true"/>
+      <parameter id="kc2_rt_021a" name="kc2_rt_021a" value="41.6869" constant="true"/>
+      <parameter id="kc2_rt_021b" name="kc2_rt_021b" value="0.0416869" constant="true"/>
+      <parameter id="kc2_rt_021c" name="kc2_rt_021c" value="316.228" constant="true"/>
+      <parameter id="vm_rt_021" name="vm_rt_021" value="0.01" constant="true"/>
+      <parameter id="Ki_rt_021" name="Ki_rt_021" value="0.389045" constant="true"/>
+      <parameter id="Ki_rt_022" name="Ki_rt_022" value="316.228" constant="true"/>
+      <parameter id="kc2_rt_022" name="kc2_rt_022" value="0.00550808" constant="true"/>
+      <parameter id="Km_rt_022" name="Km_rt_022" value="316.228" constant="true"/>
+      <parameter id="kc2_rt_023" name="kc2_rt_023" value="316.228" constant="true"/>
+      <parameter id="Km_rt_023" name="Km_rt_023" value="2.5704" constant="true"/>
+      <parameter id="vm_rt_023" name="vm_rt_023" value="316.228" constant="true"/>
+      <parameter id="alpha_rt_023" name="alpha_rt_023" value="316.228" constant="true"/>
+      <parameter id="kc2_rt_024" name="kc2_rt_024" value="316.228" constant="true"/>
+      <parameter id="vm_rt_024" name="vm_rt_024" value="194.984" constant="true"/>
+      <parameter id="vs_rt_025" name="vs_rt_025" value="2.95121" constant="true"/>
+      <parameter id="Km_rt_025" name="Km_rt_025" value="87.0964" constant="true"/>
+      <parameter id="kdeg_rt_026" name="kdeg_rt_026" value="3.63078" constant="true"/>
+      <parameter id="vs_rt_027" name="vs_rt_027" value="31.6228" constant="true"/>
+      <parameter id="kc2_rt_029" name="kc2_rt_029" value="22.9087" constant="true"/>
+      <parameter id="vm_rt_029" name="vm_rt_029" value="316.228" constant="true"/>
+      <parameter id="kdeg_rt_030" name="kdeg_rt_030" value="0.17378" constant="true"/>
+      <parameter id="Km_rt_030" name="Km_rt_030" value="0.323594" constant="true"/>
+      <parameter id="Km_rt_031" name="Km_rt_031" value="218.776" constant="true"/>
+      <parameter id="vs_rt_031" name="vs_rt_031" value="184.077" constant="true"/>
+      <parameter id="deg_rt_031" name="deg_rt_031" value="0.0891251" constant="true"/>
+      <parameter id="alpha_rt_031" name="alpha_rt_031" value="316.228" constant="true"/>
+      <parameter id="kd_rt_033" name="kd_rt_033" value="0.0851138" constant="true"/>
+      <parameter id="ka_rt_033" name="ka_rt_033" value="0.0537032" constant="true"/>
+      <parameter id="alpha_rt_034_a" name="alpha_rt_034_a" value="0.102329" constant="true"/>
+      <parameter id="kc1_rt_034_a" name="kc1_rt_034_a" value="10.617" constant="true"/>
+      <parameter id="vm_rt_034_a" name="vm_rt_034_a" value="295.121" constant="true"/>
+      <parameter id="kc1_rt_034" name="kc1_rt_034" value="0.316228" constant="true"/>
+      <parameter id="vm_rt_034" name="vm_rt_034" value="1.34896" constant="true"/>
+      <parameter id="Km_rt_035" name="Km_rt_035" value="12.8825" constant="true"/>
+      <parameter id="vs_rt_035b" name="vs_rt_035b" value="12.5893" constant="true"/>
+      <parameter id="deg_rt_035" name="deg_rt_035" value="208.93" constant="true"/>
+      <parameter id="vm_rt_037" name="vm_rt_037" value="0.00288403" constant="true"/>
+      <parameter id="kc2_rt_037" name="kc2_rt_037" value="0.0186209" constant="true"/>
+      <parameter id="mtPIK3CA" name="mtPIK3CA" value="0.112202" constant="true"/>
+      <parameter id="vs_cc_001" name="vs_cc_001" value="10.7152" constant="true"/>
+      <parameter id="kc1_cc_003" name="kc1_cc_003" value="0.0831764" constant="true"/>
+      <parameter id="vm_cc_003" name="vm_cc_003" value="0.00416869" constant="true"/>
+      <parameter id="kc2_cc_005" name="kc2_cc_005" value="239.883" constant="true"/>
+      <parameter id="vm_cc_005" name="vm_cc_005" value="0.562341" constant="true"/>
+      <parameter id="tr_cc_007a" name="tr_cc_007a" value="0.0616595" constant="true"/>
+      <parameter id="Km_cc_007a" name="Km_cc_007a" value="13.1826" constant="true"/>
+      <parameter id="Km_cc_007b" name="Km_cc_007b" value="0.138038" constant="true"/>
+      <parameter id="tr_cc_007b" name="tr_cc_007b" value="316.228" constant="true"/>
+      <parameter id="tr_cc_007c" name="tr_cc_007c" value="0.0371535" constant="true"/>
+      <parameter id="kdeg_cc_008a" name="kdeg_cc_008a" value="173.78" constant="true"/>
+      <parameter id="kdeg_cc_008b" name="kdeg_cc_008b" value="79.4328" constant="true"/>
+      <parameter id="Km_cc_008" name="Km_cc_008" value="0.0177828" constant="true"/>
+      <parameter id="ka_cc_009" name="ka_cc_009" value="2.44343" constant="true"/>
+      <parameter id="kd_cc_009" name="kd_cc_009" value="0.245471" constant="true"/>
+      <parameter id="vs_cc_010c" name="vs_cc_010c" value="0.234423" constant="true"/>
+      <parameter id="kdeg_cc_011" name="kdeg_cc_011" value="0.0125893" constant="true"/>
+      <parameter id="Km_cc_011" name="Km_cc_011" value="0.0239883" constant="true"/>
+      <parameter id="kc2_cc_011" name="kc2_cc_011" value="51.88" constant="true"/>
+      <parameter id="Km_cc_010b" name="Km_cc_010b" value="0.00288403" constant="true"/>
+      <parameter id="ka_cc_012" name="ka_cc_012" value="0.01" constant="true"/>
+      <parameter id="kd_cc_012" name="kd_cc_012" value="0.00954993" constant="true"/>
+      <parameter id="kc1_cc_013" name="kc1_cc_013" value="0.0286418" constant="true"/>
+      <parameter id="kc2_cc_013a" name="kc2_cc_013a" value="0.732825" constant="true"/>
+      <parameter id="vm_cc_013b" name="vm_cc_013b" value="237.137" constant="true"/>
+      <parameter id="ka_cc_014" name="ka_cc_014" value="0.691831" constant="true"/>
+      <parameter id="kc2_cc_014a" name="kc2_cc_014a" value="0.0245471" constant="true"/>
+      <parameter id="kd_cc_014" name="kd_cc_014" value="0.301995" constant="true"/>
+      <parameter id="vs_cc_015" name="vs_cc_015" value="0.0269153" constant="true"/>
+      <parameter id="kdeg_cc_015" name="kdeg_cc_015" value="316.228" constant="true"/>
+      <parameter id="Km_cc_015" name="Km_cc_015" value="0.0245471" constant="true"/>
+      <parameter id="ka_cc_017" name="ka_cc_017" value="234.423" constant="true"/>
+      <parameter id="kd_cc_017" name="kd_cc_017" value="7.24436" constant="true"/>
+      <parameter id="kc1_cc_018a" name="kc1_cc_018a" value="0.0218776" constant="true"/>
+      <parameter id="vm_cc_018b" name="vm_cc_018b" value="0.758578" constant="true"/>
+      <parameter id="ka_cc_019" name="ka_cc_019" value="2.5704" constant="true"/>
+      <parameter id="kd_cc_019" name="kd_cc_019" value="2.29087" constant="true"/>
+      <parameter id="vs_cc_020" name="vs_cc_020" value="1.51356" constant="true"/>
+      <parameter id="Km_cc_020" name="Km_cc_020" value="316.228" constant="true"/>
+      <parameter id="deg_cc_021" name="deg_cc_021" value="0.00724436" constant="true"/>
+      <parameter id="kc2_cc_021a" name="kc2_cc_021a" value="81.2831" constant="true"/>
+      <parameter id="kc2_cc_021b" name="kc2_cc_021b" value="316.228" constant="true"/>
+      <parameter id="Km_cc_021a" name="Km_cc_021a" value="0.213796" constant="true"/>
+      <parameter id="Km_cc_021b" name="Km_cc_021b" value="0.0588844" constant="true"/>
+      <parameter id="Km_cc_025a" name="Km_cc_025a" value="4.0738" constant="true"/>
+      <parameter id="Km_cc_025b" name="Km_cc_025b" value="0.0562341" constant="true"/>
+      <parameter id="vs_cc_025a" name="vs_cc_025a" value="0.398107" constant="true"/>
+      <parameter id="vs_cc_025b" name="vs_cc_025b" value="245.471" constant="true"/>
+      <parameter id="deg_cc_025" name="deg_cc_025" value="0.125893" constant="true"/>
+      <parameter id="kc1_cc_026" name="kc1_cc_026" value="0.0552077" constant="true"/>
+      <parameter id="a0" name="a0" value="1" constant="true"/>
+      <parameter id="b0" name="b0" value="1" constant="true"/>
+      <parameter id="PTEN" name="PTEN" value="100" constant="true"/>
+      <parameter id="IGF_on_time" name="IGF_on_time" value="2000" constant="true"/>
+      <parameter id="HRG_on_time" name="HRG_on_time" value="2000" constant="true"/>
+      <parameter id="BYL719_on_time" name="BYL719_on_time" value="100000" constant="true"/>
+      <parameter id="BYL719" name="BYL719" value="0" constant="true"/>
+      <parameter id="w_drg" name="w_drg" value="1" constant="true"/>
+      <parameter id="Ki_drg" name="Ki_drg" value="0.05" constant="true"/>
+      <parameter id="pi3kbi_on_time" name="pi3kbi_on_time" value="100000" constant="true"/>
+      <parameter id="pi3kbi" name="pi3kbi" value="0" constant="true"/>
+      <parameter id="igfri_on_time" name="igfri_on_time" value="100000" constant="true"/>
+      <parameter id="igfri" name="igfri" value="0" constant="true"/>
+      <parameter id="her3i_on_time" name="her3i_on_time" value="100000" constant="true"/>
+      <parameter id="her3i" name="her3i" value="0" constant="true"/>
+      <parameter id="pdk1i_on_time" name="pdk1i_on_time" value="100000" constant="true"/>
+      <parameter id="pdk1i" name="pdk1i" value="0" constant="true"/>
+      <parameter id="pprexi_on_time" name="pprexi_on_time" value="100000" constant="true"/>
+      <parameter id="pprexi" name="pprexi" value="0" constant="true"/>
+      <parameter id="rac1i_on_time" name="rac1i_on_time" value="100000" constant="true"/>
+      <parameter id="rac1i" name="rac1i" value="0" constant="true"/>
+      <parameter id="ndrg1i_on_time" name="ndrg1i_on_time" value="100000" constant="true"/>
+      <parameter id="ndrg1i" name="ndrg1i" value="0" constant="true"/>
+      <parameter id="sgk1i_on_time" name="sgk1i_on_time" value="100000" constant="true"/>
+      <parameter id="sgk1i" name="sgk1i" value="0" constant="true"/>
+      <parameter id="sgk3i_on_time" name="sgk3i_on_time" value="100000" constant="true"/>
+      <parameter id="sgk3i" name="sgk3i" value="0" constant="true"/>
+      <parameter id="akti_on_time" name="akti_on_time" value="100000" constant="true"/>
+      <parameter id="akti" name="akti" value="0" constant="true"/>
+      <parameter id="rasi_on_time" name="rasi_on_time" value="100000" constant="true"/>
+      <parameter id="rasi" name="rasi" value="0" constant="true"/>
+      <parameter id="rafi_on_time" name="rafi_on_time" value="100000" constant="true"/>
+      <parameter id="rafi" name="rafi" value="0" constant="true"/>
+      <parameter id="meki_on_time" name="meki_on_time" value="100000" constant="true"/>
+      <parameter id="meki" name="meki" value="0" constant="true"/>
+      <parameter id="erki_on_time" name="erki_on_time" value="100000" constant="true"/>
+      <parameter id="erki" name="erki" value="0" constant="true"/>
+      <parameter id="gsk3i_on_time" name="gsk3i_on_time" value="100000" constant="true"/>
+      <parameter id="gsk3i" name="gsk3i" value="0" constant="true"/>
+      <parameter id="mtorc1i_on_time" name="mtorc1i_on_time" value="100000" constant="true"/>
+      <parameter id="mtorc1i" name="mtorc1i" value="0" constant="true"/>
+      <parameter id="foxo3i_on_time" name="foxo3i_on_time" value="100000" constant="true"/>
+      <parameter id="foxo3i" name="foxo3i" value="0" constant="true"/>
+      <parameter id="myci_on_time" name="myci_on_time" value="100000" constant="true"/>
+      <parameter id="myci" name="myci" value="0" constant="true"/>
+      <parameter id="cdi_on_time" name="cdi_on_time" value="100000" constant="true"/>
+      <parameter id="cdi" name="cdi" value="0" constant="true"/>
+      <parameter id="cei_on_time" name="cei_on_time" value="100000" constant="true"/>
+      <parameter id="cei" name="cei" value="0" constant="true"/>
+      <parameter id="e2fi_on_time" name="e2fi_on_time" value="100000" constant="true"/>
+      <parameter id="e2fi" name="e2fi" value="0" constant="true"/>
+      <parameter id="p21i_on_time" name="p21i_on_time" value="100000" constant="true"/>
+      <parameter id="p21i" name="p21i" value="0" constant="true"/>
+      <parameter id="eri_on_time" name="eri_on_time" value="100000" constant="true"/>
+      <parameter id="eri" name="eri" value="0" constant="true"/>
+      <parameter id="s6ki_on_time" name="s6ki_on_time" value="100000" constant="true"/>
+      <parameter id="s6ki" name="s6ki" value="0" constant="true"/>
+      <parameter id="IGF_on" name="IGF_on" value="0" constant="false"/>
+      <parameter id="HRG_on" name="HRG_on" value="0" constant="false"/>
+      <parameter id="BYL719_on" name="BYL719_on" value="0" constant="false"/>
+      <parameter id="pi3kbi_on" name="pi3kbi_on" value="0" constant="false"/>
+      <parameter id="igfri_on" name="igfri_on" value="0" constant="false"/>
+      <parameter id="her3i_on" name="her3i_on" value="0" constant="false"/>
+      <parameter id="pdk1i_on" name="pdk1i_on" value="0" constant="false"/>
+      <parameter id="pprexi_on" name="pprexi_on" value="0" constant="false"/>
+      <parameter id="rac1i_on" name="rac1i_on" value="0" constant="false"/>
+      <parameter id="ndrg1i_on" name="ndrg1i_on" value="0" constant="false"/>
+      <parameter id="sgk1i_on" name="sgk1i_on" value="0" constant="false"/>
+      <parameter id="sgk3i_on" name="sgk3i_on" value="0" constant="false"/>
+      <parameter id="akti_on" name="akti_on" value="0" constant="false"/>
+      <parameter id="rasi_on" name="rasi_on" value="0" constant="false"/>
+      <parameter id="rafi_on" name="rafi_on" value="0" constant="false"/>
+      <parameter id="meki_on" name="meki_on" value="0" constant="false"/>
+      <parameter id="erki_on" name="erki_on" value="0" constant="false"/>
+      <parameter id="gsk3i_on" name="gsk3i_on" value="0" constant="false"/>
+      <parameter id="mtorc1i_on" name="mtorc1i_on" value="0" constant="false"/>
+      <parameter id="foxo3i_on" name="foxo3i_on" value="0" constant="false"/>
+      <parameter id="myci_on" name="myci_on" value="0" constant="false"/>
+      <parameter id="cdi_on" name="cdi_on" value="0" constant="false"/>
+      <parameter id="cei_on" name="cei_on" value="0" constant="false"/>
+      <parameter id="e2fi_on" name="e2fi_on" value="0" constant="false"/>
+      <parameter id="p21i_on" name="p21i_on" value="0" constant="false"/>
+      <parameter id="eri_on" name="eri_on" value="0" constant="false"/>
+      <parameter id="s6ki_on" name="s6ki_on" value="0" constant="false"/>
+      <parameter id="phosphoAkt" name="phosphoAkt" value="0" constant="false"/>
+      <parameter id="phosphoErk" name="phosphoErk" value="0" constant="false"/>
+      <parameter id="phosphoHER3" name="phosphoHER3" value="0" constant="false"/>
+      <parameter id="phosphoS6" name="phosphoS6" value="0" constant="false"/>
+      <parameter id="phosphoS6K" name="phosphoS6K" value="0" constant="false"/>
+      <parameter id="phosphoFOXO3" name="phosphoFOXO3" value="0" constant="false">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <body>
+input of CC</body>
+          </html>
+        </notes>
+      </parameter>
+      <parameter id="phosphoIGFR" name="phosphoIGFR" value="0" constant="false"/>
+      <parameter id="phosphoRB" name="phosphoRB" value="0" constant="false"/>
+      <parameter id="phosphoSGK1" name="phosphoSGK1" value="0" constant="false"/>
+      <parameter id="phosphoSGK3" name="phosphoSGK3" value="0" constant="false"/>
+      <parameter id="phosphoGSK3" name="phosphoGSK3" value="0" constant="false"/>
+      <parameter id="phosphoNDRG1" name="phosphoNDRG1" value="0" constant="false"/>
+      <parameter id="phosphomGAB" name="phosphomGAB" value="0" constant="false"/>
+      <parameter id="actmTORC1" name="actmTORC1" value="0" constant="false"/>
+      <parameter id="phosphoER" name="phosphoER" value="0" constant="false"/>
+      <parameter id="activeCd" name="activeCd" value="0" constant="false"/>
+      <parameter id="activeE2F" name="activeE2F" value="0" constant="false"/>
+      <parameter id="totalSGK3" name="totalSGK3" value="0" constant="false"/>
+      <parameter id="totalAkt" name="totalAkt" value="0" constant="false"/>
+      <parameter id="totalErk" name="totalErk" value="0" constant="false"/>
+      <parameter id="totalHER3" name="totalHER3" value="0" constant="false"/>
+      <parameter id="totalS6" name="totalS6" value="0" constant="false"/>
+      <parameter id="totalS6K" name="totalS6K" value="0" constant="false"/>
+      <parameter id="totalCd" name="totalCd" value="0" constant="false"/>
+      <parameter id="totalCe" name="totalCe" value="0" constant="false"/>
+      <parameter id="totalp21" name="totalp21" value="0" constant="false"/>
+      <parameter id="totalcMyc" name="totalcMyc" value="0" constant="false"/>
+      <parameter id="totalRB" name="totalRB" value="0" constant="false"/>
+      <parameter id="totalE2F" name="totalE2F" value="0" constant="false"/>
+      <parameter id="totalER" name="totalER" value="0" constant="false"/>
+      <parameter id="totalCDK4" name="totalCDK4" value="0" constant="false"/>
+      <parameter id="totalCDK2" name="totalCDK2" value="0" constant="false"/>
+      <parameter id="totalIGFR" name="totalIGFR" value="0" constant="false"/>
+      <parameter id="totalPI3Ka" name="totalPI3Ka" value="0" constant="false"/>
+      <parameter id="totalPI3Kb" name="totalPI3Kb" value="0" constant="false"/>
+      <parameter id="totalPIP" name="totalPIP" value="0" constant="false"/>
+      <parameter id="totalGAB" name="totalGAB" value="0" constant="false"/>
+      <parameter id="totalPDK1" name="totalPDK1" value="0" constant="false"/>
+      <parameter id="totalPPREX1" name="totalPPREX1" value="0" constant="false"/>
+      <parameter id="totalRac1" name="totalRac1" value="0" constant="false"/>
+      <parameter id="totalSGK1" name="totalSGK1" value="0" constant="false"/>
+      <parameter id="totalFOXO3" name="totalFOXO3" value="0" constant="false"/>
+      <parameter id="totalRas" name="totalRas" value="0" constant="false"/>
+      <parameter id="totalRaf" name="totalRaf" value="0" constant="false"/>
+      <parameter id="totalMEK" name="totalMEK" value="0" constant="false"/>
+      <parameter id="totalNDRG1" name="totalNDRG1" value="0" constant="false"/>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="IGF_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> IGF_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="HRG_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> HRG_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="BYL719_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> BYL719_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="pi3kbi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> pi3kbi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="igfri_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> igfri_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="her3i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> her3i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="pdk1i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> pdk1i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="pprexi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> pprexi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="rac1i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> rac1i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="ndrg1i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> ndrg1i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sgk1i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> sgk1i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sgk3i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> sgk3i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="akti_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> akti_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="rasi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> rasi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="rafi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> rafi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="meki_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> meki_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="erki_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> erki_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="gsk3i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> gsk3i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="mtorc1i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> mtorc1i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="foxo3i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> foxo3i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="myci_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> myci_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="cdi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> cdi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="cei_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> cei_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="e2fi_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> e2fi_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="p21i_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> p21i_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="eri_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> eri_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="s6ki_on">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <geq/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                <ci> s6ki_on_time </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <cn type="integer"> 0 </cn>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pAkt </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoErk">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pErk </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoHER3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pHER3L </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoS6">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pS6 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoS6K">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pS6K </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoFOXO3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <body>
+input of CC</body>
+          </html>
+        </notes>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pFOXO3 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoIGFR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> IRp </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoRB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> pRB </ci>
+            <ci> ppRB </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoSGK1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pSGK1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoSGK3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pSGK3 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoGSK3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pGSK3 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoNDRG1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pNDRG1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphomGAB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> mGABp </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="actmTORC1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> amTORC1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="phosphoER">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pER </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="activeCd">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> K4Da </ci>
+            <ci> K4Da_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="activeE2F">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> E2F </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalSGK3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> SGK3 </ci>
+            <ci> pSGK3 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Akt </ci>
+            <ci> pAkt </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalErk">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Erk </ci>
+            <ci> pErk </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalHER3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> HER3 </ci>
+            <ci> HER3L </ci>
+            <ci> pHER3L </ci>
+            <ci> iHER3L </ci>
+            <ci> pHER3L_PI3Ka </ci>
+            <ci> pHER3L_PI3Kb </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalS6">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> S6 </ci>
+            <ci> pS6 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalS6K">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> S6K </ci>
+            <ci> pS6K </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalCd">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Cd </ci>
+            <ci> K4D </ci>
+            <ci> K4Da </ci>
+            <ci> K4Da_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalCe">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Ce </ci>
+            <ci> K2E </ci>
+            <ci> K2Ea </ci>
+            <ci> K2Ea_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalp21">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> p21 </ci>
+            <ci> K4Da_p21 </ci>
+            <ci> K2Ea_p21 </ci>
+            <ci> p_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalcMyc">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> cMyc </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalRB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> RB </ci>
+            <ci> pRB </ci>
+            <ci> ppRB </ci>
+            <ci> E2FRB </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalE2F">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> E2F </ci>
+            <ci> E2FRB </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalER">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> ER </ci>
+            <ci> pER </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalCDK4">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> CDK4 </ci>
+            <ci> K4D </ci>
+            <ci> K4Da </ci>
+            <ci> K4Da_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalCDK2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> CDK2 </ci>
+            <ci> K2E </ci>
+            <ci> K2Ea </ci>
+            <ci> K2Ea_p21 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalIGFR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> IR </ci>
+            <ci> IRL </ci>
+            <ci> IRp </ci>
+            <ci> IRi </ci>
+            <ci> IRp_PI3Ka </ci>
+            <ci> IRp_PI3Kb </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPI3Ka">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PI3Ka </ci>
+            <ci> IRp_PI3Ka </ci>
+            <ci> pHER3L_PI3Ka </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPI3Kb">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PI3Kb </ci>
+            <ci> IRp_PI3Kb </ci>
+            <ci> pHER3L_PI3Kb </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPIP">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PIP2 </ci>
+            <ci> PIP3 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalGAB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> GAB </ci>
+            <ci> mGABp </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPDK1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PDK1 </ci>
+            <ci> mPDK1 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPPREX1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> PREX1 </ci>
+            <ci> mPREX1 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalRac1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> dRac1 </ci>
+            <ci> tRac1 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalSGK1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> SGK1 </ci>
+            <ci> pSGK1 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalFOXO3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> FOXO3 </ci>
+            <ci> pFOXO3 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalRas">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> dRas </ci>
+            <ci> tRas </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalRaf">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Raf </ci>
+            <ci> aaRaf </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalMEK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Mek </ci>
+            <ci> pMek </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalNDRG1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> NDRG1 </ci>
+            <ci> pNDRG1 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="rt_001" name="rt_001" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IGF" stoichiometry="1"/>
+          <speciesReference species="IR" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IRL" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_rt_001 </ci>
+                <ci> IR </ci>
+                <ci> IGF </ci>
+                <ci> IGF_on </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_rt_001 </ci>
+                <ci> IRL </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_002" name="rt_002" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IRL" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IRp" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_rt_002 </ci>
+                <ci> IRL </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> igfri_on </ci>
+                      <ci> igfri </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> igfri </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_002 </ci>
+                <ci> IRp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_003" name="rt_003" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IRp" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IRi" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_rt_003 </ci>
+                <ci> IRp </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_003 </ci>
+                <ci> IRi </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_004" name="rt_004" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PI3Ka" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IRp_PI3Ka" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="IRp"/>
+          <modifierSpeciesReference species="pS6K"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_004 </ci>
+                  <ci> IRp </ci>
+                  <ci> PI3Ka </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> Ki_rt_004 </ci>
+                    <ci> pS6K </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> s6ki_on </ci>
+                          <ci> s6ki </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> s6ki </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_004 </ci>
+                <ci> IRp_PI3Ka </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_005" name="rt_005" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PI3Kb" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IRp_PI3Kb" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="IRp"/>
+          <modifierSpeciesReference species="pS6K"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_005 </ci>
+                  <ci> IRp </ci>
+                  <ci> PI3Kb </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> Ki_rt_004 </ci>
+                    <ci> pS6K </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> s6ki_on </ci>
+                          <ci> s6ki </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> s6ki </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_005 </ci>
+                <ci> IRp_PI3Kb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_006" name="rt_006" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PI3Ka" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pHER3L_PI3Ka" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pHER3L"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_006 </ci>
+                <ci> pHER3L </ci>
+                <ci> PI3Ka </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_006 </ci>
+                <ci> pHER3L_PI3Ka </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_007" name="rt_007" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PI3Kb" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pHER3L_PI3Kb" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pHER3L"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_007 </ci>
+                <ci> pHER3L </ci>
+                <ci> PI3Kb </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_007 </ci>
+                <ci> pHER3L_PI3Kb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_008" name="rt_008" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PIP2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PIP3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="IRp_PI3Ka"/>
+          <modifierSpeciesReference species="IRp_PI3Kb"/>
+          <modifierSpeciesReference species="mGABp"/>
+          <modifierSpeciesReference species="pHER3L_PI3Ka"/>
+          <modifierSpeciesReference species="pHER3L_PI3Kb"/>
+          <modifierSpeciesReference species="tRac1"/>
+          <modifierSpeciesReference species="tRas"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> PIP2 </ci>
+                  <ci> kc2_rt_008 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Km_rt_008 </ci>
+                  <ci> PIP2 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <plus/>
+                    <ci> mtPIK3CA </ci>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <plus/>
+                        <ci> IRp_PI3Ka </ci>
+                        <ci> pHER3L_PI3Ka </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <cn type="integer"> 1 </cn>
+                        <apply>
+                          <times/>
+                          <ci> alpha_rt_008a </ci>
+                          <ci> mGABp </ci>
+                        </apply>
+                        <apply>
+                          <times/>
+                          <ci> alpha_rt_008b </ci>
+                          <ci> tRas </ci>
+                          <apply>
+                            <minus/>
+                            <cn type="integer"> 1 </cn>
+                            <apply>
+                              <divide/>
+                              <apply>
+                                <times/>
+                                <ci> w_drg </ci>
+                                <ci> rasi_on </ci>
+                                <ci> rasi </ci>
+                              </apply>
+                              <apply>
+                                <plus/>
+                                <ci> Ki_drg </ci>
+                                <ci> rasi </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> BYL719_on </ci>
+                        <ci> BYL719 </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> BYL719 </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <apply>
+                    <plus/>
+                    <ci> IRp_PI3Kb </ci>
+                    <ci> pHER3L_PI3Kb </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <times/>
+                      <ci> alpha_rt_008a </ci>
+                      <ci> mGABp </ci>
+                    </apply>
+                    <apply>
+                      <times/>
+                      <ci> alpha_rt_008c </ci>
+                      <ci> tRac1 </ci>
+                      <apply>
+                        <minus/>
+                        <cn type="integer"> 1 </cn>
+                        <apply>
+                          <divide/>
+                          <apply>
+                            <times/>
+                            <ci> w_drg </ci>
+                            <ci> rac1i_on </ci>
+                            <ci> rac1i </ci>
+                          </apply>
+                          <apply>
+                            <plus/>
+                            <ci> Ki_drg </ci>
+                            <ci> rac1i </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> pi3kbi_on </ci>
+                        <ci> pi3kbi </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> pi3kbi </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_009" name="rt_009" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PIP3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PIP2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc2_rt_009 </ci>
+              <ci> PIP3 </ci>
+              <ci> PTEN </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_010" name="rt_010" reversible="false">
+        <listOfReactants>
+          <speciesReference species="GAB" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mGABp" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="PIP3"/>
+          <modifierSpeciesReference species="pErk"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_010 </ci>
+                  <ci> GAB </ci>
+                  <ci> PIP3 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> Ki_rt_010 </ci>
+                    <ci> pErk </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> erki_on </ci>
+                          <ci> erki </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> erki </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_010 </ci>
+                <ci> mGABp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_011" name="rt_011" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PDK1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mPDK1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="PIP3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_011 </ci>
+                <ci> PDK1 </ci>
+                <ci> PIP3 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_011 </ci>
+                <ci> mPDK1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_012" name="rt_012" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PREX1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mPREX1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="PIP3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_012 </ci>
+                <ci> PREX1 </ci>
+                <ci> PIP3 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_012 </ci>
+                <ci> mPREX1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_013" name="rt_013" reversible="false">
+        <listOfReactants>
+          <speciesReference species="dRac1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="tRac1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mPREX1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_013 </ci>
+                <ci> mPREX1 </ci>
+                <ci> dRac1 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> pprexi_on </ci>
+                      <ci> pprexi </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> pprexi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_013 </ci>
+                <ci> tRac1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_014" name="rt_014" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Akt" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pAkt" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mPDK1"/>
+          <modifierSpeciesReference species="ppRB"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_014 </ci>
+                  <ci> mPDK1 </ci>
+                  <ci> Akt </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> pdk1i_on </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> ki_rt_014 </ci>
+                    <ci> ppRB </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_014 </ci>
+                <ci> pAkt </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_015" name="rt_015" reversible="false">
+        <listOfReactants>
+          <speciesReference species="SGK1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pSGK1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mPDK1"/>
+          <modifierSpeciesReference species="ppRB"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_015 </ci>
+                  <ci> SGK1 </ci>
+                  <ci> mPDK1 </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> pdk1i_on </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> ki_rt_014 </ci>
+                    <ci> ppRB </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_015 </ci>
+                <ci> pSGK1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_016" name="rt_016" reversible="false">
+        <listOfReactants>
+          <speciesReference species="SGK3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pSGK3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mPDK1"/>
+          <modifierSpeciesReference species="ppRB"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_016 </ci>
+                  <ci> mPDK1 </ci>
+                  <ci> SGK3 </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> pdk1i_on </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> pdk1i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> ki_rt_014 </ci>
+                    <ci> ppRB </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_016 </ci>
+                <ci> pSGK3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_016a" name="rt_016a" reversible="false">
+        <listOfReactants>
+          <speciesReference species="GSK3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pGSK3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pAkt"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_016a </ci>
+                <ci> pAkt </ci>
+                <ci> GSK3 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> akti_on </ci>
+                      <ci> akti </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> akti </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_016a </ci>
+                <ci> pGSK3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_017" name="rt_017" reversible="false">
+        <listOfReactants>
+          <speciesReference species="mTORC1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="amTORC1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K4Da"/>
+          <modifierSpeciesReference species="pAkt"/>
+          <modifierSpeciesReference species="pSGK1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> mTORC1 </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_rt_017a </ci>
+                    <ci> pAkt </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> akti_on </ci>
+                          <ci> akti </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> akti </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> kc2_rt_017b </ci>
+                    <ci> pSGK1 </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> sgk1i_on </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> alpha_rt_017 </ci>
+                    <ci> K4Da </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_017 </ci>
+                <ci> amTORC1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_018" name="rt_018" reversible="false">
+        <listOfReactants>
+          <speciesReference species="FOXO3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pFOXO3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pAkt"/>
+          <modifierSpeciesReference species="pSGK1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> FOXO3 </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_rt_018a </ci>
+                    <ci> pAkt </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> akti_on </ci>
+                          <ci> akti </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> akti </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> kc2_rt_018b </ci>
+                    <ci> pSGK1 </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> sgk1i_on </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_018 </ci>
+                <ci> pFOXO3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_019" name="rt_019" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S6K" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pS6K" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="amTORC1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_019 </ci>
+                <ci> S6K </ci>
+                <ci> amTORC1 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> mtorc1i_on </ci>
+                      <ci> mtorc1i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> mtorc1i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_019 </ci>
+                <ci> pS6K </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_020" name="rt_020" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S6" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pS6" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pS6K"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> S6 </ci>
+                <ci> kc2_rt_020a </ci>
+                <ci> pS6K </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_020 </ci>
+                <ci> pS6 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_021" name="rt_021" reversible="false">
+        <listOfReactants>
+          <speciesReference species="dRas" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="tRas" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="IRp"/>
+          <modifierSpeciesReference species="mGABp"/>
+          <modifierSpeciesReference species="pErk"/>
+          <modifierSpeciesReference species="pHER3L"/>
+          <modifierSpeciesReference species="pS6K"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> dRas </ci>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <times/>
+                      <ci> kc2_rt_021a </ci>
+                      <ci> pHER3L </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> kc2_rt_021b </ci>
+                        <ci> IRp </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <cn type="integer"> 1 </cn>
+                        <apply>
+                          <times/>
+                          <ci> Ki_rt_004 </ci>
+                          <ci> pS6K </ci>
+                          <apply>
+                            <minus/>
+                            <cn type="integer"> 1 </cn>
+                            <apply>
+                              <divide/>
+                              <apply>
+                                <times/>
+                                <ci> w_drg </ci>
+                                <ci> s6ki_on </ci>
+                                <ci> s6ki </ci>
+                              </apply>
+                              <apply>
+                                <plus/>
+                                <ci> Ki_drg </ci>
+                                <ci> s6ki </ci>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <times/>
+                      <ci> kc2_rt_021c </ci>
+                      <ci> mGABp </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> Ki_rt_021 </ci>
+                    <ci> pErk </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> erki_on </ci>
+                          <ci> erki </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> erki </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_021 </ci>
+                <ci> tRas </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_022" name="rt_022" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Raf" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="aaRaf" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pAkt"/>
+          <modifierSpeciesReference species="tRas"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_rt_022 </ci>
+                    <ci> tRas </ci>
+                    <ci> Raf </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> rasi_on </ci>
+                          <ci> rasi </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> rasi </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_rt_022 </ci>
+                    <ci> Raf </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> Ki_rt_022 </ci>
+                    <ci> pAkt </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> akti_on </ci>
+                          <ci> akti </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> akti </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kc2_rt_022 </ci>
+                <ci> aaRaf </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_023" name="rt_023" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Mek" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pMek" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="aaRaf"/>
+          <modifierSpeciesReference species="tRac1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kc2_rt_023 </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <times/>
+                      <ci> alpha_rt_023 </ci>
+                      <ci> tRac1 </ci>
+                      <apply>
+                        <minus/>
+                        <cn type="integer"> 1 </cn>
+                        <apply>
+                          <divide/>
+                          <apply>
+                            <times/>
+                            <ci> w_drg </ci>
+                            <ci> rac1i_on </ci>
+                            <ci> rac1i </ci>
+                          </apply>
+                          <apply>
+                            <plus/>
+                            <ci> Ki_drg </ci>
+                            <ci> rac1i </ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <ci> aaRaf </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> rafi_on </ci>
+                        <ci> rafi </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> rafi </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <ci> Mek </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Km_rt_023 </ci>
+                  <ci> Mek </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_023 </ci>
+                <ci> pMek </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_024" name="rt_024" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Erk" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pErk" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pMek"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_024 </ci>
+                <ci> Erk </ci>
+                <ci> pMek </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> meki_on </ci>
+                      <ci> meki </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> meki </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_024 </ci>
+                <ci> pErk </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_025" name="rt_025" reversible="false">
+        <listOfProducts>
+          <speciesReference species="SGK3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="ER"/>
+          <modifierSpeciesReference species="pER"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_rt_025 </ci>
+                <apply>
+                  <plus/>
+                  <ci> ER </ci>
+                  <ci> pER </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> eri_on </ci>
+                      <ci> eri </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> eri </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_rt_025 </ci>
+                <ci> ER </ci>
+                <ci> pER </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_026" name="rt_026" reversible="false">
+        <listOfReactants>
+          <speciesReference species="SGK3" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_rt_026 </ci>
+              <ci> SGK3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_027" name="rt_027" reversible="false">
+        <listOfProducts>
+          <speciesReference species="NDRG1" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> vs_rt_027 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_028" name="rt_028" reversible="false">
+        <listOfReactants>
+          <speciesReference species="NDRG1" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <ci> vs_rt_027 </ci>
+                <cn type="integer"> 50 </cn>
+              </apply>
+              <ci> NDRG1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_029" name="rt_029" reversible="false">
+        <listOfReactants>
+          <speciesReference species="NDRG1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pNDRG1" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pSGK1"/>
+          <modifierSpeciesReference species="pSGK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_029 </ci>
+                <ci> NDRG1 </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <times/>
+                    <ci> pSGK1 </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> sgk1i_on </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> sgk1i </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <times/>
+                    <ci> pSGK3 </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> sgk3i_on </ci>
+                          <ci> sgk3i </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> sgk3i </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_029 </ci>
+                <ci> pNDRG1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_030" name="rt_030" reversible="false">
+        <listOfReactants>
+          <speciesReference species="pNDRG1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GSK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kdeg_rt_030 </ci>
+                <ci> pNDRG1 </ci>
+                <ci> GSK3 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_rt_030 </ci>
+                <ci> pNDRG1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_031" name="rt_031" reversible="false">
+        <listOfProducts>
+          <speciesReference species="HER3" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="FOXO3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_rt_031 </ci>
+                <ci> FOXO3 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> foxo3i_on </ci>
+                      <ci> foxo3i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> foxo3i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_rt_031 </ci>
+                <ci> FOXO3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_032" name="rt_032" reversible="false">
+        <listOfReactants>
+          <speciesReference species="HER3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NDRG1"/>
+          <modifierSpeciesReference species="pNDRG1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> deg_rt_031 </ci>
+              <ci> HER3 </ci>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> alpha_rt_031 </ci>
+                  <apply>
+                    <plus/>
+                    <ci> NDRG1 </ci>
+                    <ci> pNDRG1 </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> ndrg1i_on </ci>
+                        <ci> ndrg1i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> ndrg1i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_033" name="rt_033" reversible="false">
+        <listOfReactants>
+          <speciesReference species="HER3" stoichiometry="1"/>
+          <speciesReference species="HRG" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="HER3L" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_rt_033 </ci>
+                <ci> HER3 </ci>
+                <ci> HRG </ci>
+                <ci> HRG_on </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_rt_033 </ci>
+                <ci> HER3L </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_034" name="rt_034" reversible="false">
+        <listOfReactants>
+          <speciesReference species="HER3L" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pHER3L" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_rt_034 </ci>
+                <ci> HER3L </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> her3i_on </ci>
+                      <ci> her3i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> her3i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_034 </ci>
+                <ci> pHER3L </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_034_a" name="rt_034_a" reversible="false">
+        <listOfReactants>
+          <speciesReference species="pHER3L" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="iHER3L" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pErk"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_rt_034_a </ci>
+                <ci> pHER3L </ci>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <times/>
+                    <ci> alpha_rt_034_a </ci>
+                    <ci> pErk </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> erki_on </ci>
+                          <ci> erki </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> erki </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_034_a </ci>
+                <ci> iHER3L </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_035" name="rt_035" reversible="false">
+        <listOfProducts>
+          <speciesReference species="ER" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="FOXO3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_rt_035b </ci>
+                <ci> FOXO3 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> foxo3i_on </ci>
+                      <ci> foxo3i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> foxo3i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_rt_035 </ci>
+                <ci> FOXO3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_036" name="rt_036" reversible="false">
+        <listOfReactants>
+          <speciesReference species="ER" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> deg_rt_035 </ci>
+              <ci> ER </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="rt_037" name="rt_037" reversible="false">
+        <listOfReactants>
+          <speciesReference species="ER" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pER" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pErk"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_rt_037 </ci>
+                <ci> pErk </ci>
+                <ci> ER </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> erki_on </ci>
+                      <ci> erki </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> erki </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_rt_037 </ci>
+                <ci> pER </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_001" name="cc_001" reversible="false">
+        <listOfProducts>
+          <speciesReference species="RB" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> vs_cc_001 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_002" name="cc_002" reversible="false">
+        <listOfReactants>
+          <speciesReference species="RB" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <ci> vs_cc_001 </ci>
+                <cn type="integer"> 100 </cn>
+              </apply>
+              <ci> RB </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_003" name="cc_003" reversible="false">
+        <listOfReactants>
+          <speciesReference species="RB" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRB" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K4Da"/>
+          <modifierSpeciesReference species="K4Da_p21"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_cc_003 </ci>
+                <ci> RB </ci>
+                <apply>
+                  <plus/>
+                  <ci> K4Da </ci>
+                  <ci> K4Da_p21 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_cc_003 </ci>
+                <ci> pRB </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_005" name="cc_005" reversible="false">
+        <listOfReactants>
+          <speciesReference species="pRB" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ppRB" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K2Ea"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc2_cc_005 </ci>
+                <ci> K2Ea </ci>
+                <ci> pRB </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_cc_005 </ci>
+                <ci> ppRB </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_007" name="cc_007" reversible="false">
+        <listOfProducts>
+          <speciesReference species="E2F" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="cMyc"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> tr_cc_007a </ci>
+                  <ci> E2F </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> e2fi_on </ci>
+                        <ci> e2fi </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> e2fi </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Km_cc_007b </ci>
+                  <ci> E2F </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> tr_cc_007b </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> cMyc </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> myci_on </ci>
+                          <ci> myci </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> myci </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_007a </ci>
+                    <ci> cMyc </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> E2F </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> e2fi_on </ci>
+                          <ci> e2fi </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> e2fi </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_007b </ci>
+                    <ci> E2F </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> tr_cc_007c </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> cMyc </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> myci_on </ci>
+                          <ci> myci </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> myci </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_007a </ci>
+                    <ci> cMyc </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_008" name="cc_008" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E2F" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K2Ea"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> E2F </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> e2fi_on </ci>
+                      <ci> e2fi </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> e2fi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> kdeg_cc_008b </ci>
+                  <apply>
+                    <times/>
+                    <ci> kdeg_cc_008a </ci>
+                    <ci> K2Ea </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_008 </ci>
+                <ci> E2F </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_009" name="cc_009" reversible="false">
+        <listOfReactants>
+          <speciesReference species="RB" stoichiometry="1"/>
+          <speciesReference species="E2F" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2FRB" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_cc_009 </ci>
+                <ci> E2F </ci>
+                <ci> RB </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_cc_009 </ci>
+                <ci> E2FRB </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_010" name="cc_010" reversible="false">
+        <listOfProducts>
+          <speciesReference species="Cd" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="amTORC1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_cc_010c </ci>
+                <ci> amTORC1 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> mtorc1i_on </ci>
+                      <ci> mtorc1i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> mtorc1i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_010b </ci>
+                <ci> amTORC1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_011" name="cc_011" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Cd" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GSK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_cc_011 </ci>
+              <ci> Cd </ci>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_cc_011 </ci>
+                    <ci> GSK3 </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> w_drg </ci>
+                          <ci> gsk3i_on </ci>
+                          <ci> gsk3i </ci>
+                        </apply>
+                        <apply>
+                          <plus/>
+                          <ci> Ki_drg </ci>
+                          <ci> gsk3i </ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_011 </ci>
+                    <ci> GSK3 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_012" name="cc_012" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Cd" stoichiometry="1"/>
+          <speciesReference species="CDK4" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K4D" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_cc_012 </ci>
+                <ci> Cd </ci>
+                <ci> CDK4 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> cdi_on </ci>
+                      <ci> cdi </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> cdi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_cc_012 </ci>
+                <ci> K4D </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_013" name="cc_013" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K4D" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K4Da" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_cc_013 </ci>
+                <ci> K4D </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_cc_013b </ci>
+                <ci> K4Da </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_013a" name="cc_013a" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K4Da" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CDK4" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GSK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kc2_cc_013a </ci>
+                <ci> K4Da </ci>
+                <ci> GSK3 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> gsk3i_on </ci>
+                      <ci> gsk3i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> gsk3i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_011 </ci>
+                <ci> GSK3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_014" name="cc_014" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K4Da" stoichiometry="1"/>
+          <speciesReference species="p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K4Da_p21" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_cc_014 </ci>
+                <ci> K4Da </ci>
+                <ci> p21 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> p21i_on </ci>
+                      <ci> p21i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> p21i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_cc_014 </ci>
+                <ci> K4Da_p21 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_014a" name="cc_014a" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K4Da_p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CDK4" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GSK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kc2_cc_014a </ci>
+                <ci> K4Da_p21 </ci>
+                <ci> GSK3 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> gsk3i_on </ci>
+                      <ci> gsk3i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> gsk3i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_011 </ci>
+                <ci> GSK3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_015" name="cc_015" reversible="false">
+        <listOfProducts>
+          <speciesReference species="Ce" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2F"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_cc_015 </ci>
+                <ci> E2F </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> e2fi_on </ci>
+                      <ci> e2fi </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> e2fi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_015 </ci>
+                <ci> E2F </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_016" name="cc_016" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Ce" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_cc_015 </ci>
+              <ci> Ce </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_017" name="cc_017" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Ce" stoichiometry="1"/>
+          <speciesReference species="CDK2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K2E" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_cc_017 </ci>
+                <ci> Ce </ci>
+                <ci> CDK2 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> cei_on </ci>
+                      <ci> cei </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> cei </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_cc_017 </ci>
+                <ci> K2E </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_018" name="cc_018" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K2E" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K2Ea" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> kc1_cc_018a </ci>
+                <ci> K2E </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> vm_cc_018b </ci>
+                <ci> K2Ea </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_019" name="cc_019" reversible="false">
+        <listOfReactants>
+          <speciesReference species="K2Ea" stoichiometry="1"/>
+          <speciesReference species="p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="K2Ea_p21" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> ka_cc_019 </ci>
+                <ci> K2Ea </ci>
+                <ci> p21 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> p21i_on </ci>
+                      <ci> p21i </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> p21i </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> kd_cc_019 </ci>
+                <ci> K2Ea_p21 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_020" name="cc_020" reversible="false">
+        <listOfProducts>
+          <speciesReference species="p21" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pErk"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> vs_cc_020 </ci>
+                <ci> pErk </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> erki_on </ci>
+                      <ci> erki </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> erki </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_020 </ci>
+                <ci> pErk </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_021" name="cc_021" reversible="false">
+        <listOfReactants>
+          <speciesReference species="p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K2Ea"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> p21 </ci>
+              <apply>
+                <plus/>
+                <ci> deg_cc_021 </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_cc_021b </ci>
+                    <ci> K2Ea </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_021b </ci>
+                    <ci> K2Ea </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_022" name="cc_022" reversible="false">
+        <listOfReactants>
+          <speciesReference species="p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="p_p21" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pAkt"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kc2_cc_021a </ci>
+                <ci> pAkt </ci>
+                <ci> p21 </ci>
+                <apply>
+                  <minus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> w_drg </ci>
+                      <ci> akti_on </ci>
+                      <ci> akti </ci>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <ci> Ki_drg </ci>
+                      <ci> akti </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_cc_021a </ci>
+                <ci> pAkt </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_023" name="cc_023" reversible="false">
+        <listOfReactants>
+          <speciesReference species="p_p21" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="K2Ea"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> p_p21 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
+                  <ci> deg_cc_021 </ci>
+                  <cn type="integer"> 10 </cn>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kc2_cc_021b </ci>
+                    <ci> K2Ea </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Km_cc_021b </ci>
+                    <ci> K2Ea </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_025" name="cc_025" reversible="false">
+        <listOfProducts>
+          <speciesReference species="cMyc" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="ER"/>
+          <modifierSpeciesReference species="amTORC1"/>
+          <modifierSpeciesReference species="pER"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> vs_cc_025a </ci>
+                  <ci> amTORC1 </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> mtorc1i_on </ci>
+                        <ci> mtorc1i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> mtorc1i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Km_cc_025a </ci>
+                  <ci> amTORC1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> vs_cc_025b </ci>
+                  <apply>
+                    <plus/>
+                    <ci> ER </ci>
+                    <ci> pER </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> eri_on </ci>
+                        <ci> eri </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> eri </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Km_cc_025b </ci>
+                  <ci> ER </ci>
+                  <ci> pER </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cc_026" name="cc_026" reversible="false">
+        <listOfReactants>
+          <speciesReference species="cMyc" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GSK3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> deg_cc_025 </ci>
+              <ci> cMyc </ci>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> kc1_cc_026 </ci>
+                  <ci> GSK3 </ci>
+                  <apply>
+                    <minus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci> w_drg </ci>
+                        <ci> gsk3i_on </ci>
+                        <ci> gsk3i </ci>
+                      </apply>
+                      <apply>
+                        <plus/>
+                        <ci> Ki_drg </ci>
+                        <ci> gsk3i </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
