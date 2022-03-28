@@ -1,0 +1,668 @@
+********** MODEL NAME
+
+% RTK pathway module
+% reference: Mol Syst Biol 2:259 (2009)
+% 
+% cell cycle module
+% reference: PNAS 106:21643-21648 (2009)
+% 
+% HER3 module
+% reference: Cancer Res. 69:6713-20 (2009)
+% 
+% ER(estronge receptor) module
+% reference: FASEB J. 29:2022-2031 (2015)
+% 
+% ********** MODEL NOTES
+% UNIT: nM, min^-1
+
+********** MODEL STATE INFORMATION
+
+%% RTK module
+IGF(0) = 0
+IR(0) = 150
+IRL(0) = 0
+IRp(0) = 0
+IRi(0) = 0
+PI3Ka(0) = 200
+PI3Kb(0)=200
+IRp_PI3Ka(0) = 0
+IRp_PI3Kb(0)=0
+pHER3L_PI3Ka(0) = 0
+pHER3L_PI3Kb(0) = 0
+PIP3(0) = 0
+PIP2(0) = 3000
+PDK1(0) = 100
+mPDK1(0) = 0
+GAB(0)=225
+mGABp(0)=0
+PREX1(0)=100
+mPREX1(0)=0
+dRac1(0)=100
+tRac1(0)=0 
+Akt(0) = 100
+pAkt(0) = 0
+SGK1(0)=100
+pSGK1(0)=0
+SGK3(0)=100
+pSGK3(0)=0
+GSK3(0) = 100
+pGSK3(0) = 0
+mTORC1(0) = 100
+amTORC1(0) = 0
+FOXO3(0)=100
+pFOXO3(0)=0
+NDRG1(0)=100
+pNDRG1(0)=0
+S6K(0)=100
+pS6K(0)=0
+S6(0) = 100
+pS6(0) = 0
+dRas(0) = 150
+tRas(0) = 0
+Raf(0) = 100
+aaRaf(0) = 0
+Mek(0) = 200
+pMek(0) = 0
+Erk(0) = 400
+pErk(0) = 0
+HER3(0) =100
+HRG(0)=0
+HER3L(0)=0
+pHER3L(0)=0
+iHER3L(0) = 0
+ER(0)=10
+pER(0)=0
+
+
+%% CC module
+RB(0) =100
+pRB(0)=0
+ppRB(0)=0
+E2F(0)=0
+E2FRB(0)=0
+Cd(0)=0
+CDK4(0)=100
+K4D(0)=0
+K4Da(0)=0
+Ce(0)=0
+CDK2(0)=100
+K2E(0)=0
+K2Ea(0)=0
+p21(0)=0
+K4Da_p21(0)=0
+K2Ea_p21(0)=0
+cMyc(0)=0
+p_p21(0)=0
+
+********** MODEL PARAMETERS
+
+ka_rt_001=	0.0831763771102671
+kd_rt_001=	0.0141253754462275
+kc1_rt_002=	0.108392691402120
+vm_rt_002=	26.9153480392692
+kc1_rt_003=	23.4422881531992
+vm_rt_003=	2.69153480392692
+kc2_rt_004=	0.229086765276777
+vm_rt_004=	2.75422870333817
+Ki_rt_004=	0.00331131121482591
+kc2_rt_005=	0.00645654229034656
+vm_rt_005=	0.724435960074990
+kc2_rt_006=	316.227766016838
+vm_rt_006=	0.0128824955169313
+kc2_rt_007=	28.1838293126445
+vm_rt_007=	0.0295120922666639
+alpha_rt_008a=	0.0162181009735893
+alpha_rt_008b=	316.227766016838
+alpha_rt_008c=	0.117489755493953
+kc2_rt_010=	7.94328234724282
+Ki_rt_010=	128.824955169313
+vm_rt_010=	50.1187233627272
+kc2_rt_008=	0.0707945784384138
+kc2_rt_009=	288.403150312661
+Km_rt_008=	2.81838293126445
+vm_rt_011=	0.954992586021436
+kc2_rt_011=	28.8403150312661
+kc2_rt_012=	0.218776162394955
+vm_rt_012=	0.616595001861482
+kc2_rt_013=	1
+vm_rt_013=	64.5654229034656
+kc2_rt_014=	0.436515832240166
+vm_rt_014=	0.112201845430196
+ki_rt_014=	281.838293126446
+kc2_rt_015=	2.29086765276777
+vm_rt_015=	100
+kc2_rt_016=	1.31825673855641
+vm_rt_016=	0.128824955169313
+kc2_rt_016a=	316.227766016838
+vm_rt_016a=	2.04173794466953
+kc2_rt_017a=	0.111429453359173
+kc2_rt_017b=	13.1825673855641
+alpha_rt_017=	0.00988553094656939
+vm_rt_017=	147.910838816821
+kc2_rt_018a=	316.227766016838
+kc2_rt_018b=	316.227766016838
+vm_rt_018=	0.00213796208950223
+kc2_rt_019=	102.329299228075
+vm_rt_019=	263.026799189538
+kc2_rt_020a=	1.02329299228075
+kc2_rt_020b=	154.881661891248
+vm_rt_020=	316.227766016838
+kc2_rt_021a=	41.6869383470335
+kc2_rt_021b=	0.0416869383470336
+kc2_rt_021c=	316.227766016838
+vm_rt_021=	0.0100000000000000
+Ki_rt_021=	0.389045144994281
+Ki_rt_022=	316.227766016838
+kc2_rt_022=	0.00550807696405404
+Km_rt_022=	316.227766016838
+kc2_rt_023=	316.227766016838
+Km_rt_023=	2.57039578276886
+vm_rt_023=	316.227766016838
+alpha_rt_023=	316.227766016838
+kc2_rt_024=	316.227766016838
+vm_rt_024=	194.984459975805
+vs_rt_025=	2.95120922666639
+Km_rt_025=	87.0963589956081
+kdeg_rt_026=	3.63078054770101
+vs_rt_027=	31.6227766016838
+kc2_rt_029=	22.9086765276777
+vm_rt_029=	316.227766016838
+kdeg_rt_030=	0.173780082874938
+Km_rt_030=	0.323593656929628
+Km_rt_031=	218.776162394955
+vs_rt_031=	184.077200146896
+deg_rt_031=	0.0891250938133746
+alpha_rt_031=	316.227766016838
+kd_rt_033=	0.0851138038202376
+ka_rt_033=	0.0537031796370253
+alpha_rt_034_a=	0.102329299228075
+kc1_rt_034_a=	10.6169555719872
+vm_rt_034_a=	295.120922666639
+kc1_rt_034=	0.316227766016838
+vm_rt_034=	1.34896288259165
+Km_rt_035=	12.8824955169313
+vs_rt_035b=	12.5892541179417
+deg_rt_035=	208.929613085404
+vm_rt_037=	0.00288403150312661
+kc2_rt_037=	0.0186208713666287
+mtPIK3CA=	0.112201845430196
+vs_cc_001=	10.7151930523761
+kc1_cc_003=	0.0831763771102671
+vm_cc_003=	0.00416869383470336
+kc2_cc_005=	239.883291901949
+vm_cc_005=	0.562341325190349
+tr_cc_007a=	0.0616595001861482
+Km_cc_007a=	13.1825673855641
+Km_cc_007b=	0.138038426460289
+tr_cc_007b=	316.227766016838
+tr_cc_007c=	0.0371535229097173
+kdeg_cc_008a=	173.780082874938
+kdeg_cc_008b=	79.4328234724281
+Km_cc_008=	0.0177827941003892
+ka_cc_009=	2.44343055269397
+kd_cc_009=	0.245470891568503
+vs_cc_010c=	0.234422881531992
+kdeg_cc_011=	0.0125892541179417
+Km_cc_011=	0.0239883291901949
+kc2_cc_011=	51.8800038928961
+Km_cc_010b=	0.00288403150312661
+ka_cc_012=	0.0100000000000000
+kd_cc_012=	0.00954992586021436
+kc1_cc_013=	0.0286417796990658
+kc2_cc_013a=	0.732824533138904
+vm_cc_013b=	237.137370566166
+ka_cc_014=	0.691830970918937
+kc2_cc_014a=	0.0245470891568503
+kd_cc_014=	0.301995172040202
+vs_cc_015=	0.0269153480392692
+kdeg_cc_015=	316.227766016838
+Km_cc_015=	0.0245470891568503
+ka_cc_017=	234.422881531992
+kd_cc_017=	7.24435960074990
+kc1_cc_018a=	0.0218776162394955
+vm_cc_018b=	0.758577575029184
+ka_cc_019=	2.57039578276886
+kd_cc_019=	2.29086765276777
+vs_cc_020=	1.51356124843621
+Km_cc_020=	316.227766016838
+deg_cc_021=	0.00724435960074990
+kc2_cc_021a=	81.2830516164099
+kc2_cc_021b=	316.227766016838
+Km_cc_021a=	0.213796208950223
+Km_cc_021b=	0.0588843655355589
+Km_cc_025a=	4.07380277804113
+Km_cc_025b=	0.0562341325190349
+vs_cc_025a=	0.398107170553497
+vs_cc_025b=	245.470891568503
+deg_cc_025=	0.125892541179417
+kc1_cc_026=	0.0552077439280757
+a0=	1
+b0=	1
+PTEN=	100
+IGF_on_time=	2000
+HRG_on_time=	2000
+
+
+BYL719_on_time=	100000
+BYL719=	0
+w_drg=	1
+Ki_drg=	0.0500000000000000
+pi3kbi_on_time=	100000
+pi3kbi=	0
+igfri_on_time=	100000
+igfri=	0
+her3i_on_time=	100000
+her3i=	0
+pdk1i_on_time=	100000
+pdk1i=	0
+pprexi_on_time=	100000
+pprexi=	0
+rac1i_on_time=	100000
+rac1i=	0
+ndrg1i_on_time=	100000
+ndrg1i=	0
+sgk1i_on_time=	100000
+sgk1i=	0
+sgk3i_on_time=	100000
+sgk3i=	0
+akti_on_time=	100000
+akti=	0
+rasi_on_time=	100000
+rasi=	0
+rafi_on_time=	100000
+rafi=	0
+meki_on_time=	100000
+meki=	0
+erki_on_time=	100000
+erki=	0
+gsk3i_on_time=	100000
+gsk3i=	0
+mtorc1i_on_time=	100000
+mtorc1i=	0
+foxo3i_on_time=	100000
+foxo3i=	0
+myci_on_time=	100000
+myci=	0
+cdi_on_time=	100000
+cdi=	0
+cei_on_time=	100000
+cei=	0
+e2fi_on_time=	100000
+e2fi=	0
+p21i_on_time=	100000
+p21i=	0
+eri_on_time=	100000
+eri=	0
+s6ki_on_time=	100000
+s6ki=	0
+
+
+********** MODEL VARIABLES
+IGF_on = piecewiseIQM(1,ge(time,IGF_on_time),0)
+HRG_on = piecewiseIQM(1,ge(time,HRG_on_time),0)
+
+
+BYL719_on= piecewiseIQM(1,ge(time,BYL719_on_time),0)
+pi3kbi_on= piecewiseIQM(1,ge(time,pi3kbi_on_time),0)
+igfri_on= piecewiseIQM(1,ge(time,igfri_on_time),0)
+her3i_on= piecewiseIQM(1,ge(time,her3i_on_time),0)
+pdk1i_on= piecewiseIQM(1,ge(time,pdk1i_on_time),0)
+pprexi_on= piecewiseIQM(1,ge(time,pprexi_on_time),0)
+rac1i_on= piecewiseIQM(1,ge(time,rac1i_on_time),0)
+ndrg1i_on= piecewiseIQM(1,ge(time,ndrg1i_on_time),0)
+sgk1i_on= piecewiseIQM(1,ge(time,sgk1i_on_time),0)
+sgk3i_on= piecewiseIQM(1,ge(time,sgk3i_on_time),0)
+akti_on= piecewiseIQM(1,ge(time,akti_on_time),0)
+rasi_on= piecewiseIQM(1,ge(time,rasi_on_time),0)
+rafi_on= piecewiseIQM(1,ge(time,rafi_on_time),0)
+meki_on= piecewiseIQM(1,ge(time,meki_on_time),0)
+erki_on= piecewiseIQM(1,ge(time,erki_on_time),0)
+gsk3i_on= piecewiseIQM(1,ge(time,gsk3i_on_time),0)
+mtorc1i_on= piecewiseIQM(1,ge(time,mtorc1i_on_time),0)
+foxo3i_on= piecewiseIQM(1,ge(time,foxo3i_on_time),0)
+myci_on= piecewiseIQM(1,ge(time,myci_on_time),0)
+cdi_on= piecewiseIQM(1,ge(time,cdi_on_time),0)
+cei_on= piecewiseIQM(1,ge(time,cei_on_time),0)
+e2fi_on= piecewiseIQM(1,ge(time,e2fi_on_time),0)
+p21i_on= piecewiseIQM(1,ge(time,p21i_on_time),0)
+eri_on= piecewiseIQM(1,ge(time,eri_on_time),0)
+s6ki_on= piecewiseIQM(1,ge(time,s6ki_on_time),0)
+
+
+
+%% output
+phosphoAkt = pAkt
+phosphoErk = pErk
+phosphoHER3 = pHER3L
+phosphoS6 = pS6
+phosphoS6K = pS6K
+phosphoFOXO3 = pFOXO3 % input of CC
+phosphoIGFR = IRp
+phosphoRB=pRB+ppRB
+phosphoSGK1=pSGK1
+phosphoSGK3=pSGK3
+phosphoGSK3=pGSK3
+phosphoNDRG1=pNDRG1
+phosphomGAB=mGABp
+actmTORC1=amTORC1
+phosphoER=pER
+activeCd=K4Da+K4Da_p21
+activeE2F=E2F
+
+
+
+totalSGK3=SGK3+pSGK3
+totalAkt=Akt+pAkt
+totalErk=Erk+pErk
+totalHER3=HER3+HER3L+pHER3L+iHER3L + pHER3L_PI3Ka + pHER3L_PI3Kb
+totalS6=S6+pS6
+totalS6K=S6K+pS6K
+totalCd=Cd+K4D+K4Da+K4Da_p21
+totalCe=Ce+K2E+K2Ea+K2Ea_p21
+totalp21=p21+K4Da_p21+K2Ea_p21+p_p21
+totalcMyc=cMyc
+totalRB=RB+pRB+ppRB+E2FRB
+totalE2F=E2F+E2FRB
+totalER= ER + pER
+totalCDK4=CDK4+K4D+K4Da+K4Da_p21
+totalCDK2=CDK2+K2E+K2Ea+K2Ea_p21
+totalIGFR = IR + IRL + IRp + IRi + IRp_PI3Ka +IRp_PI3Kb 
+totalPI3Ka = PI3Ka + IRp_PI3Ka + pHER3L_PI3Ka
+totalPI3Kb = PI3Kb + IRp_PI3Kb + pHER3L_PI3Kb
+totalPIP = PIP2 + PIP3
+totalGAB = GAB + mGABp
+totalPDK1 = PDK1 + mPDK1
+totalPPREX1 = PREX1 + mPREX1
+totalRac1 = dRac1 + tRac1
+totalSGK1 = SGK1 + pSGK1
+totalFOXO3 = FOXO3 + pFOXO3
+totalRas = dRas + tRas
+totalRaf = Raf + aaRaf
+totalMEK = Mek + pMek
+totalNDRG1 = NDRG1 + pNDRG1
+
+
+
+********** MODEL REACTIONS
+%% IGF -> IR (forward/reverse)
+IGF+IR => IRL : rt_001
+vf = ka_rt_001 * IR * IGF * IGF_on - kd_rt_001 * IRL
+
+IRL => IRp : rt_002
+vf = kc1_rt_002 * IRL * (1-w_drg*igfri_on*igfri/(Ki_drg + igfri)) - vm_rt_002 * IRp
+
+IRp => IRi : rt_003
+vf = kc1_rt_003 * IRp - vm_rt_003 * IRi
+
+%% IRp -> PI3Ka (forward/reverse)
+%% S6K -| PI3Ka (through IRS)
+PI3Ka => IRp_PI3Ka : rt_004
+vf = kc2_rt_004 * IRp * PI3Ka /(1 + Ki_rt_004*pS6K * (1-w_drg*s6ki_on*s6ki/(Ki_drg + s6ki))) - vm_rt_004 * IRp_PI3Ka
+
+
+%% IRp -> PI3Kb (forward/reverse)
+%% S6K -| PI3Kb (through IRS)
+PI3Kb => IRp_PI3Kb : rt_005
+vf = kc2_rt_005 * IRp * PI3Kb /(1 + Ki_rt_004*pS6K * (1-w_drg*s6ki_on*s6ki/(Ki_drg + s6ki)) ) - vm_rt_005 * IRp_PI3Kb
+
+%% HER3 -> PI3Ka (forward/reverse)
+PI3Ka => pHER3L_PI3Ka : rt_006
+vf = kc2_rt_006 * pHER3L * PI3Ka  - vm_rt_006 * pHER3L_PI3Ka
+
+%% HER3 -> PI3Kb (forward/reverse)
+PI3Kb => pHER3L_PI3Kb : rt_007
+vf = kc2_rt_007 * pHER3L * PI3Kb  - vm_rt_007 * pHER3L_PI3Kb
+
+%% (actPI3Ka, actPI3Kb) -> PIP3
+%% with mGABp, RasGTP, Rac1
+%% mutatn PIK3CA (constant) 
+PIP2 => PIP3 : rt_008
+vf =PIP2*kc2_rt_008/(Km_rt_008 + PIP2)*((mtPIK3CA + (IRp_PI3Ka + pHER3L_PI3Ka)*(1+alpha_rt_008a*mGABp + alpha_rt_008b*tRas* (1-w_drg*rasi_on*rasi/(Ki_drg + rasi))))*(1-w_drg*BYL719_on*BYL719/(Ki_drg + BYL719)) + (IRp_PI3Kb + pHER3L_PI3Kb)*(1+alpha_rt_008a*mGABp + alpha_rt_008c*tRac1*(1-w_drg*rac1i_on*rac1i/(Ki_drg + rac1i)))*(1-w_drg*pi3kbi_on*pi3kbi/(Ki_drg + pi3kbi)))
+
+PIP3 => PIP2 : rt_009
+vf = kc2_rt_009 * PIP3 * PTEN
+
+%% PIP3 -> GAB (forward/reverse)
+%% pERK -| mGAB (https://mcb.asm.org/content/33/8/1657)
+GAB => mGABp : rt_010
+vf = kc2_rt_010 * GAB * PIP3 / (1 + Ki_rt_010*pErk* (1-w_drg*erki_on*erki/(Ki_drg + erki))) - vm_rt_010 * mGABp
+
+
+%% PIP3 -> PDK1 
+%% mPDK1 represents the combined effect of PDK1 and mTORC2
+PDK1 => mPDK1 : rt_011
+vf = kc2_rt_011 * PDK1 * PIP3 - vm_rt_011 * mPDK1
+
+
+%% PIP3 -> PREX1 (forward/reverse)
+PREX1 => mPREX1 : rt_012
+vf = kc2_rt_012 * PREX1 * PIP3 - vm_rt_012 * mPREX1
+
+
+%% PREX1 -> Rac1 (forward/reverse)
+dRac1 => tRac1 : rt_013
+vf = kc2_rt_013 * mPREX1 * dRac1 * (1-w_drg*pprexi_on*pprexi/(Ki_drg + pprexi)) - vm_rt_013 * tRac1 
+
+
+%% (PDK1,mTORC1) -> AKT 
+%% ppRB (hyperphospho) --| mTORC2
+Akt => pAkt : rt_014
+vf = kc2_rt_014 * mPDK1 * Akt * (1-w_drg*pdk1i_on*pdk1i/(Ki_drg + pdk1i))/(1+ki_rt_014*ppRB)  - vm_rt_014 * pAkt 
+
+
+%% (PDk1, mTORC2)  -> SGK1 (forward/reverse)
+%% ppRB --| mTORC2
+SGK1 => pSGK1	:rt_015
+vf=	kc2_rt_015*SGK1*mPDK1* (1-w_drg*pdk1i_on*pdk1i/(Ki_drg + pdk1i))/(1+ki_rt_014*ppRB) - vm_rt_015*pSGK1
+
+
+%% (PDk1, mTORC2)  -> SGK3
+%% ppRB --| mTORC2
+SGK3 => pSGK3	:rt_016
+vf=	kc2_rt_016*mPDK1*SGK3* (1-w_drg*pdk1i_on*pdk1i/(Ki_drg + pdk1i))/(1+ki_rt_014*ppRB) - vm_rt_016*pSGK3
+
+
+%% Akt -> GSK3
+GSK3 => pGSK3	:rt_016a
+vf=	kc2_rt_016a*pAkt*GSK3* (1-w_drg*akti_on*akti/(Ki_drg + akti)) - vm_rt_016a*pGSK3
+
+%% (Akt, SGK1) -> mTORC1 
+%% D-CDK4/6 -> mTORC1 (through TSC phosphorylation)
+mTORC1 => amTORC1 : rt_017
+vf = mTORC1 * (kc2_rt_017a*pAkt * (1-w_drg*akti_on*akti/(Ki_drg + akti)) + kc2_rt_017b*pSGK1* (1-w_drg*sgk1i_on*sgk1i/(Ki_drg + sgk1i)))*(1 + alpha_rt_017*K4Da) - vm_rt_017 * amTORC1
+ 
+%% (Akt, SGK1)  -> pFOXO3
+FOXO3 => pFOXO3	:rt_018
+vf=	FOXO3*(kc2_rt_018a*pAkt * (1-w_drg*akti_on*akti/(Ki_drg + akti)) + kc2_rt_018b*pSGK1* (1-w_drg*sgk1i_on*sgk1i/(Ki_drg + sgk1i))) - vm_rt_018*pFOXO3
+
+
+%% mTORC1 -> S6K (forward/reverse)
+S6K => pS6K : rt_019
+vf = kc2_rt_019*S6K*amTORC1 * (1-w_drg*mtorc1i_on*mtorc1i/(Ki_drg + mtorc1i)) - vm_rt_019*pS6K
+
+S6 => pS6 : rt_020
+vf = S6*kc2_rt_020a*pS6K - vm_rt_020*pS6
+
+%% HER3 -> Ras (through GS)
+%% IR -> Ras (through GS) throuhg IRS
+%% S6K -| IRS
+%% mGAB -> Ras (through GS)
+%% pERK -| Ras (throgh GS)
+dRas => tRas : rt_021
+vf =  dRas *(kc2_rt_021a * pHER3L + kc2_rt_021b*IRp /(1 + Ki_rt_004*pS6K * (1-w_drg*s6ki_on*s6ki/(Ki_drg + s6ki))) + kc2_rt_021c*mGABp)/(1 + Ki_rt_021*pErk* (1-w_drg*erki_on*erki/(Ki_drg + erki))) - vm_rt_021 * tRas 
+
+%% Ras -> Raf
+%% pAKT -| Raf
+Raf => aaRaf : rt_022
+vf = kc2_rt_022 * tRas * Raf * (1-w_drg*rasi_on*rasi/(Ki_drg + rasi))/ (Km_rt_022 + Raf)/(1 + Ki_rt_022*pAkt* (1-w_drg*akti_on*akti/(Ki_drg + akti))) - kc2_rt_022 * aaRaf 
+ 
+%% Raf -> MEK1 
+%% Rac1 -> MEK1
+Mek => pMek : rt_023
+vf = kc2_rt_023 * (1+alpha_rt_023*tRac1* (1-w_drg*rac1i_on*rac1i/(Ki_drg + rac1i)))*aaRaf* (1-w_drg*rafi_on*rafi/(Ki_drg + rafi))* Mek / (Km_rt_023 + Mek) - vm_rt_023 * pMek 
+
+
+%% MEK -> ERK
+Erk => pErk : rt_024
+vf = kc2_rt_024 * Erk * pMek * (1-w_drg*meki_on*meki/(Ki_drg + meki)) - vm_rt_024 * pErk 
+
+
+%% ER -> SGK3
+=> SGK3	:rt_025
+vf=	vs_rt_025*(ER + pER)* (1-w_drg*eri_on*eri/(Ki_drg + eri)) /(Km_rt_025 + (ER + pER))
+
+SGK3 =>	:rt_026
+vf=	kdeg_rt_026*SGK3
+
+%% NDRG1 synthesis (basal level)
+%% basal level = 50nM
+=> NDRG1	:rt_027
+vf=	vs_rt_027
+
+NDRG1 => :rt_028
+vf=	(vs_rt_027/50)*NDRG1
+
+%% SGK(1,3) -> pNDRG1 (forward/reverse)
+NDRG1 => pNDRG1	:rt_029
+vf=	kc2_rt_029*NDRG1*(pSGK1* (1-w_drg*sgk1i_on*sgk1i/(Ki_drg + sgk1i)) + pSGK3* (1-w_drg*sgk3i_on*sgk3i/(Ki_drg + sgk3i))) - vm_rt_029*pNDRG1
+
+%% Akt -| pNDRG1 degradation
+pNDRG1 => :rt_030
+vf=	kdeg_rt_030*pNDRG1*GSK3/(Km_rt_030 + pNDRG1)
+
+%% FOXO3 -> HER3
+%% NDRG1 -> HER3 degradation
+=> HER3	:rt_031
+vf=	vs_rt_031*FOXO3* (1-w_drg*foxo3i_on*foxo3i/(Ki_drg + foxo3i))/(Km_rt_031 + FOXO3) 
+ 
+HER3 =>	:rt_032
+vf = deg_rt_031*HER3*(1+alpha_rt_031*(NDRG1+pNDRG1)* (1-w_drg*ndrg1i_on*ndrg1i/(Ki_drg + ndrg1i)))
+
+%% HRG binding (forward/reverse)
+%% ERK -| HER2 (https://www.nature.com/articles/srep31502)
+HER3 + HRG => HER3L	: rt_033
+vf =	ka_rt_033*HER3*HRG*HRG_on - kd_rt_033*HER3L
+
+HER3L => pHER3L	:rt_034
+vf =	kc1_rt_034*HER3L * (1-w_drg*her3i_on*her3i/(Ki_drg + her3i)) - vm_rt_034*pHER3L 
+
+pHER3L => iHER3L	:rt_034_a
+vf =	kc1_rt_034_a*pHER3L*(1 + alpha_rt_034_a*pErk* (1-w_drg*erki_on*erki/(Ki_drg + erki))) - vm_rt_034_a*iHER3L 
+
+
+%% FOXO3 -> ER
+%% ERK -> pER
+=> ER	:rt_035
+vf=	vs_rt_035b*FOXO3* (1-w_drg*foxo3i_on*foxo3i/(Ki_drg + foxo3i))/(Km_rt_035 + FOXO3)
+
+ER =>	:rt_036
+vf=	deg_rt_035*ER
+
+ER => pER	:rt_037
+vf = kc2_rt_037*pErk*ER* (1-w_drg*erki_on*erki/(Ki_drg + erki)) - vm_rt_037*pER
+
+%% cell cycle module
+
+
+%% cell cycle module
+
+
+%% basal RB = 100 nM
+=> RB	:cc_001
+vf=	vs_cc_001
+
+RB =>	:cc_002
+vf=	(vs_cc_001/100)*RB
+
+%% CDK4/6 -> pRB
+RB => pRB	:cc_003
+vf=	kc1_cc_003*RB*(K4Da + K4Da_p21) - vm_cc_003*pRB
+
+%%  CDK2 -> ppRB
+pRB => ppRB	:cc_005
+vf=	kc2_cc_005*K2Ea*pRB - vm_cc_005*ppRB
+
+%% (E2F, cMyc) -> E2F
+%% RB + E2F  
+=> E2F	:cc_007
+vf=	tr_cc_007a*E2F* (1-w_drg*e2fi_on*e2fi/(Ki_drg + e2fi))/(Km_cc_007b+E2F) + tr_cc_007b*(cMyc * (1-w_drg*myci_on*myci/(Ki_drg + myci))/(Km_cc_007a+cMyc))*(E2F* (1-w_drg*e2fi_on*e2fi/(Ki_drg + e2fi))/(Km_cc_007b+E2F)) + tr_cc_007c*(cMyc* (1-w_drg*myci_on*myci/(Ki_drg + myci))/(Km_cc_007a+cMyc))
+
+E2F =>	:cc_008
+vf=	E2F* (1-w_drg*e2fi_on*e2fi/(Ki_drg + e2fi))*(kdeg_cc_008b + kdeg_cc_008a*K2Ea)/(Km_cc_008 + E2F)
+
+E2F + RB => E2FRB	:cc_009
+vf=	(ka_cc_009*E2F*RB  - kd_cc_009*E2FRB)
+
+%% (pERK) -> Cd
+%% GSK3 -| Cd
+=> Cd	:cc_010
+vf=vs_cc_010c*amTORC1 * (1-w_drg*mtorc1i_on*mtorc1i/(Ki_drg + mtorc1i))/(Km_cc_010b + amTORC1)
+
+Cd =>	:cc_011
+vf=	kdeg_cc_011*Cd*(1 + kc2_cc_011*GSK3* (1-w_drg*gsk3i_on*gsk3i/(Ki_drg + gsk3i))/(Km_cc_011 + GSK3))
+
+%% Cd+CDK4/6 and activation (K4Da)
+Cd + CDK4 => K4D	:cc_012
+vf=	ka_cc_012*Cd*CDK4* (1-w_drg*cdi_on*cdi/(Ki_drg + cdi)) - kd_cc_012*K4D
+
+K4D => K4Da	:cc_013
+vf=	kc1_cc_013*K4D  - vm_cc_013b*K4Da
+
+K4Da => CDK4: cc_013a
+vf=	kc2_cc_013a*K4Da*GSK3* (1-w_drg*gsk3i_on*gsk3i/(Ki_drg + gsk3i))/(Km_cc_011 + GSK3)
+
+%% CDK4/6+p21
+K4Da + p21 => K4Da_p21	:cc_014
+vf=	ka_cc_014*K4Da*p21 * (1-w_drg*p21i_on*p21i/(Ki_drg + p21i))  - kd_cc_014*K4Da_p21
+
+K4Da_p21 => CDK4 : cc_014a
+vf=	kc2_cc_014a*K4Da_p21*GSK3* (1-w_drg*gsk3i_on*gsk3i/(Ki_drg + gsk3i))/(Km_cc_011 + GSK3)
+
+%% E2F -> Ce
+=> Ce	:cc_015
+vf=	vs_cc_015*E2F* (1-w_drg*e2fi_on*e2fi/(Ki_drg + e2fi))/(Km_cc_015 + E2F)
+
+Ce => 	:cc_016
+vf=	kdeg_cc_015*Ce
+
+%% Ce + CDK2 and activation (K2Ea)
+Ce + CDK2 => K2E	:cc_017
+vf=	ka_cc_017*Ce*CDK2 * (1-w_drg*cei_on*cei/(Ki_drg + cei)) - kd_cc_017*K2E
+
+K2E => K2Ea	:cc_018
+vf=	kc1_cc_018a*K2E - vm_cc_018b*K2Ea
+
+%% CDK2 + p21
+K2Ea + p21 => K2Ea_p21	:cc_019
+vf=	ka_cc_019*K2Ea*p21 * (1-w_drg*p21i_on*p21i/(Ki_drg + p21i)) - kd_cc_019*K2Ea_p21
+
+%% pERK -> p21
+=> p21	:cc_020
+vf=	vs_cc_020*pErk* (1-w_drg*erki_on*erki/(Ki_drg + erki))/(Km_cc_020+pErk)
+
+p21 =>	:cc_021
+vf=	p21*(deg_cc_021 + kc2_cc_021b*K2Ea / (Km_cc_021b + K2Ea)) 
+
+p21 => p_p21	:cc_022
+vf=	kc2_cc_021a*pAkt*p21*(1-w_drg*akti_on*akti/(Ki_drg + akti))/(Km_cc_021a + pAkt) 
+
+p_p21 => 	:cc_023
+vf=	p_p21*(deg_cc_021/10  + kc2_cc_021b*K2Ea / (Km_cc_021b + K2Ea)) 
+
+%% (mTORC1,ER) -> c-Myc
+=> cMyc : cc_025
+vf = vs_cc_025a*amTORC1* (1-w_drg*mtorc1i_on*mtorc1i/(Ki_drg + mtorc1i))/(Km_cc_025a+amTORC1) + vs_cc_025b*(ER+pER)* (1-w_drg*eri_on*eri/(Ki_drg + eri)) /(Km_cc_025b+(ER+pER))
+
+cMyc => : cc_026
+vf = deg_cc_025*cMyc*(1 + kc1_cc_026*GSK3* (1-w_drg*gsk3i_on*gsk3i/(Ki_drg + gsk3i)))
+
+
+********** MODEL FUNCTIONS
+
+
+
+********** MODEL EVENTS
+
+
+********** MODEL MATLAB FUNCTIONS
+
