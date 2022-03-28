@@ -12,7 +12,7 @@ clc;
 close all;
 
 % specify the directory where this file is located
-rootwd = 'C:\Users\sshin\OneDrive - Monash University\RESEARCH\___PI3K (p21) proj\_CodeMaster\Matlab\PI3K_Network_Model - GitHub';
+rootwd = 'YOUR ROOT FOLD DIRECTORY';
 
 
 % Working Folds (shared)
