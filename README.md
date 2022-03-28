@@ -8,10 +8,23 @@ The integrated PI3K network model was formulated using ordinary differential equ
 0. Open the project manger file, PI3K_<Model_Manager.m.
 1. Specify your root directory where the PI3K_<Model_Manager.m is located.
 rootwd = 'YOUR ROOT DIRECTORY';
-2. Choose a simulaiton job
-- Drug synergy: a. Simulate drug response, b. Calculate IC50, c. Simulate ICX responses, d. Calculate CDI (synergy score), e. Simulate ICX responses (for perturbation analysis), f. Simulate CDI (synergy score for perturbatio analysis)        
-- Simulation: a. Functional analysis of p21, b. Ensemble simulation, c. Model validation
-- Model calibration: a. Run Genetic Algorithm, b. Plot fitting result, c. Plot validation result
+2. Choose a simulaiton task:
+[1] drug_synergy 
+[2] simulation 
+[3] model_calib 
+3. Choose a detailed drug synergy task:
+[1] simulate drug responses 
+[2] calculate ic50 
+[3] simulate icx responses 
+[4] calculate CDI 
+[5] simulate icx responses (perturbation) 
+[6] calculate CDI (perturbation) 
+4. Choose a detailed simulation task:
+[1] functional role of p21 
+[2] ensemble simulation 
+[3] model_valid_byl 
+5. Choose a model_calib task:
+[1] plot fitting results (training data) 
 
 * Unzip BoundedLine.zip and boxplottool.zip to the Packages fold where they are located.
 
