@@ -9,7 +9,7 @@ Hon Yan Kelvin Yip1,2, Sung-Young Shin1,2, Annabel Chee1,3, Ching-Seng Ang4, Fer
 6Lead contact
 *Corresponding author: lan.k.nguyen@monash.edu (L.K.N), antonella.papa@monash.edu (A.P.)
 
-How to Run:
+How to run:
 1) Download all the files and save them to your local drive.
 2) Execute 'run_master_code'.
 3) Choose a number you want to reproduce:
