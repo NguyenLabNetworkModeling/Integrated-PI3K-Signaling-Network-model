@@ -22,5 +22,9 @@ How to run:
 10) [7] Figure 4AB: Model predictions assessing inter-dependency between p21 levels
 11) [8] Figure 7D: Model simulations (the phenotypic model) of drug synergism for 25 drug pairings co-targeting PI3K 
 
+External libraries utilized in the code:
+1. rgb: Author: Kristján Jónasson, Dept. of Computer Science, University of Iceland (jonasson@hi.is). June 2009.
+2. figtitle: Written by Chad A. Greene of the University of Texas at Austin Institute for Geophysics, July 2013.
+3. ShadedPlots: John Onofrey (2023). Shaded Plots and Statistical Distribution Visualizations (https://www.mathworks.com/matlabcentral/fileexchange/69203-shaded-plots-and-statistical-distribution-visualizations), MATLAB Central File Exchange. Retrieved November 22, 2023
 
-
+ 
