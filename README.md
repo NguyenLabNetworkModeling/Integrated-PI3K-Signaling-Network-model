@@ -27,5 +27,8 @@ External libraries utilized in the code:
 2. figtitle: Written by Chad A. Greene of the University of Texas at Austin Institute for Geophysics, July 2013.
 3. ShadedPlots: John Onofrey (2023). Shaded Plots and Statistical Distribution Visualizations (https://www.mathworks.com/matlabcentral/fileexchange/69203-shaded-plots-and-statistical-distribution-visualizations), MATLAB Central File Exchange. Retrieved November 22, 2023
 
+License:
+The code is provided ‘as-is’. We encourage its use in academic and research environments and invite collaboration and further development. However, users should note that for commercial applications, there may be specific limitations or requirements as governed by the licensing terms detailed within the repository.
+
 Contact:
 sungyoung.shin (a) monash.edu
